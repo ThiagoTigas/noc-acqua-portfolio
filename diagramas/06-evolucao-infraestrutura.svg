@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Evolução planejada da infraestrutura</title>
+  <desc id="descricao">Diagrama separa o que está implementado na V1.0.0 do que está planejado ou em estudo para versões futuras. Nenhum item futuro é apresentado como entrega.</desc>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#070d15"/>
+      <stop offset="0.6" stop-color="#0a131e"/>
+      <stop offset="1" stop-color="#0e1a27"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.82" cy="0.12" r="0.7">
+      <stop offset="0" stop-color="#3fd6e0" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#3fd6e0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grade" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="rgba(148, 176, 206, 0.13)" stroke-width="1"/>
+    </pattern>
+    <marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#3fd6e0"/>
+    </marker>
+    <marker id="pontaFraca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#6b8094"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#fundo)"/>
+  <rect width="1600" height="900" fill="url(#halo)"/>
+  <rect width="1600" height="900" fill="url(#grade)" opacity="0.5"/>
+  <text x="96" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="3.2" fill="#3fd6e0">EVOLUÇÃO · INFRAESTRUTURA</text>
+  <text x="96" y="142" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.2" fill="#e9f1f8">Implementado e planejado</text>
+  <text x="96" y="184" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#a9bccd">O que existe hoje e o que depende de decisão, orçamento e autorização.</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.4">
+    <rect x="1240" y="52" width="264" height="34" rx="17" fill="rgba(63,214,224,0.10)" stroke="#3fd6e0" stroke-opacity="0.35"/>
+    <circle cx="1262" cy="69" r="4" fill="#3fd6e0"/>
+    <text x="1278" y="73" fill="#3fd6e0">V1.0.0 · ROADMAP</text>
+  </g>
+  <rect x="96" y="212" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.6">
+    <rect x="96" y="252" width="230" height="30" rx="15" fill="#48d3a0" fill-opacity="0.12" stroke="#48d3a0" stroke-opacity="0.4"/>
+    <text x="211" y="272" text-anchor="middle" fill="#48d3a0">IMPLEMENTADO · V1.0.0</text>
+    <rect x="864" y="252" width="238" height="30" rx="15" fill="#f0c26b" fill-opacity="0.12" stroke="#f0c26b" stroke-opacity="0.4"/>
+    <text x="983" y="272" text-anchor="middle" fill="#f0c26b">PLANEJADO / EM ESTUDO</text>
+  </g>
+  <path d="M800 252V790" stroke="rgba(148, 176, 206, 0.13)" stroke-width="1" stroke-dasharray="6 8"/>
+  <g>
+    <rect x="96" y="310" width="640" height="110" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="96" y="310" width="4" height="110" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="120" y="350" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Acesso seguro</text>
+    
+    <text x="120" y="376" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Navegador autenticado · HTTPS</text>
+  </g>
+  <g>
+    <rect x="96" y="440" width="640" height="110" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="96" y="440" width="4" height="110" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="120" y="480" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Aplicação</text>
+    
+    <text x="120" y="506" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Frontend e API no ambiente dedicado</text>
+  </g>
+  <g>
+    <rect x="96" y="570" width="640" height="110" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="96" y="570" width="4" height="110" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="120" y="610" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Dados e continuidade</text>
+    
+    <text x="120" y="636" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">PostgreSQL isolado · backup verificado</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M416 420L416 440" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g aria-hidden="true">
+    <path d="M416 550L416 570" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g>
+    <rect x="864" y="310" width="640" height="110" rx="18" fill="#0e1a27" stroke="#6b8094" stroke-dasharray="7 6"/>
+    <rect x="864" y="310" width="4" height="110" rx="2" fill="#f0c26b" fill-opacity="0.4"/>
+    <text x="888" y="350" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Hospedagem em nuvem</text>
+    <text x="1484" y="340" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#f0c26b">EM ESTUDO</text>
+    <text x="888" y="398" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Avaliação de provedor, custo e localização dos dados</text>
+  </g>
+  <g>
+    <rect x="864" y="440" width="640" height="110" rx="18" fill="#0e1a27" stroke="#6b8094" stroke-dasharray="7 6"/>
+    <rect x="864" y="440" width="4" height="110" rx="2" fill="#f0c26b" fill-opacity="0.4"/>
+    <text x="888" y="480" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Disponibilidade e observabilidade</text>
+    <text x="1484" y="470" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#f0c26b">PLANEJADO</text>
+    <text x="888" y="528" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Monitoramento contínuo e alertas operacionais</text>
+  </g>
+  <g>
+    <rect x="864" y="570" width="640" height="110" rx="18" fill="#0e1a27" stroke="#6b8094" stroke-dasharray="7 6"/>
+    <rect x="864" y="570" width="4" height="110" rx="2" fill="#f0c26b" fill-opacity="0.4"/>
+    <text x="888" y="610" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Migração com retorno</text>
+    <text x="1484" y="600" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#f0c26b">EM ESTUDO</text>
+    <text x="888" y="658" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Ensaio em ambiente descartável antes da virada</text>
+  </g>
+  <text x="864" y="726" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#8196aa">Itens futuros não possuem data, provedor ou custo definidos.</text>
+  <text x="864" y="748" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#8196aa">Qualquer avanço depende de autorização específica.</text>
+  <rect x="96" y="824" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <text x="96" y="856" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#6b8094">Fonte: roadmap técnico da V1.1 e documentação da V1.0.0.</text>
+  <text x="1504" y="856" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#8196aa">MATERIAL DE APRESENTAÇÃO · SEM DADOS OPERACIONAIS</text>
+  <rect x="0" y="897" width="1600" height="3" fill="#3fd6e0" opacity="0.3"/>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Processamento de ordens e indicadores</title>
+  <desc id="descricao">Diagrama simplificado do percurso do dado: leitura, normalização, staging e presença, agregações e interfaces, com reconciliação e proveniência explícitas.</desc>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#070d15"/>
+      <stop offset="0.6" stop-color="#0a131e"/>
+      <stop offset="1" stop-color="#0e1a27"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.82" cy="0.12" r="0.7">
+      <stop offset="0" stop-color="#3fd6e0" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#3fd6e0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grade" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="rgba(148, 176, 206, 0.13)" stroke-width="1"/>
+    </pattern>
+    <marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#3fd6e0"/>
+    </marker>
+    <marker id="pontaFraca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#6b8094"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#fundo)"/>
+  <rect width="1600" height="900" fill="url(#halo)"/>
+  <rect width="1600" height="900" fill="url(#grade)" opacity="0.5"/>
+  <text x="96" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="3.2" fill="#3fd6e0">DADOS · DO IXC À TELA</text>
+  <text x="96" y="142" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.2" fill="#e9f1f8">Ordens e indicadores</text>
+  <text x="96" y="184" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#a9bccd">O mesmo dado percorre um caminho único até painéis, relatórios e assistente.</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.4">
+    <rect x="1240" y="52" width="264" height="34" rx="17" fill="rgba(63,214,224,0.10)" stroke="#3fd6e0" stroke-opacity="0.35"/>
+    <circle cx="1262" cy="69" r="4" fill="#3fd6e0"/>
+    <text x="1278" y="73" fill="#3fd6e0">IMPLEMENTADO · V1.0.0</text>
+  </g>
+  <rect x="96" y="212" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <g>
+    <rect x="96" y="300" width="240" height="200" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="96" y="300" width="4" height="200" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="120" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Leitura</text>
+    <text x="316" y="330" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#3fd6e0">01</text>
+    <text x="120" y="388" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">O.S. da origem</text>
+    <text x="120" y="412" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Somente leitura</text>
+  </g>
+  <g>
+    <rect x="388" y="300" width="240" height="200" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="388" y="300" width="4" height="200" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="412" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Normalização</text>
+    <text x="608" y="330" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#3fd6e0">02</text>
+    <text x="412" y="388" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Status, assunto,</text>
+    <text x="412" y="412" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">setor e técnico</text>
+  </g>
+  <g>
+    <rect x="680" y="300" width="240" height="200" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="680" y="300" width="4" height="200" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="704" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Staging e presença</text>
+    <text x="900" y="330" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#3fd6e0">03</text>
+    <text x="704" y="388" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Registro completo</text>
+    <text x="704" y="412" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">e reconciliação</text>
+  </g>
+  <g>
+    <rect x="972" y="300" width="240" height="200" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="972" y="300" width="4" height="200" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="996" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Agregações</text>
+    <text x="1192" y="330" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#3fd6e0">04</text>
+    <text x="996" y="388" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Painel, produtividade</text>
+    <text x="996" y="412" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">e relatórios</text>
+  </g>
+  <g>
+    <rect x="1264" y="300" width="240" height="200" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="1264" y="300" width="4" height="200" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="1288" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Interfaces</text>
+    <text x="1484" y="330" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#3fd6e0">05</text>
+    <text x="1288" y="388" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Tela, CSV e</text>
+    <text x="1288" y="412" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">assistente</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M336 400L388 400" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g aria-hidden="true">
+    <path d="M628 400L680 400" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g aria-hidden="true">
+    <path d="M920 400L972 400" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g aria-hidden="true">
+    <path d="M1212 400L1264 400" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g>
+    <rect x="96" y="580" width="680" height="200" rx="16" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <rect x="96" y="580" width="680" height="3" rx="1.5" fill="#3fd6e0"/>
+    <text x="120" y="618" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#e9f1f8">Reconciliação de ausências</text>
+    <text x="120" y="648" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">O.S. ausente na coleta não é apagada: passa a ausência observada, com histórico.</text>
+    <text x="120" y="670" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">A janela e o critério da conferência ficam registrados.</text>
+    <text x="120" y="692" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Nenhum painel usa registro que não foi observado.</text>
+  </g>
+  <g>
+    <rect x="824" y="580" width="680" height="200" rx="16" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <rect x="824" y="580" width="680" height="3" rx="1.5" fill="#48d3a0"/>
+    <text x="848" y="618" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#e9f1f8">Proveniência do indicador</text>
+    <text x="848" y="648" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Cada número informa origem, janela e critério de cálculo.</text>
+    <text x="848" y="670" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Atribuição de O.S. não comprova execução do serviço.</text>
+    <text x="848" y="692" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Indicadores não são estimados nem completados artificialmente.</text>
+  </g>
+  <rect x="96" y="824" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <text x="96" y="856" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#6b8094">Fonte: mapeamento de ordens, armazenamento e serviços de agregação (V1.0.0).</text>
+  <text x="1504" y="856" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#8196aa">MATERIAL DE APRESENTAÇÃO · SEM DADOS OPERACIONAIS</text>
+  <rect x="0" y="897" width="1600" height="3" fill="#3fd6e0" opacity="0.3"/>
+</svg>

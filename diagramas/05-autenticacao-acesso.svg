@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Autenticação e controle de acesso</title>
+  <desc id="descricao">Diagrama simplificado do acesso: verificação de senha, MFA quando exigido, sessão com cookie HttpOnly, autorização por perfil e permissão, e módulos liberados por escopo.</desc>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#070d15"/>
+      <stop offset="0.6" stop-color="#0a131e"/>
+      <stop offset="1" stop-color="#0e1a27"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.82" cy="0.12" r="0.7">
+      <stop offset="0" stop-color="#3fd6e0" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#3fd6e0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grade" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="rgba(148, 176, 206, 0.13)" stroke-width="1"/>
+    </pattern>
+    <marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#3fd6e0"/>
+    </marker>
+    <marker id="pontaFraca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#6b8094"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#fundo)"/>
+  <rect width="1600" height="900" fill="url(#halo)"/>
+  <rect width="1600" height="900" fill="url(#grade)" opacity="0.5"/>
+  <text x="96" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="3.2" fill="#3fd6e0">SEGURANÇA · ACESSO</text>
+  <text x="96" y="142" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.2" fill="#e9f1f8">Autenticação e acesso</text>
+  <text x="96" y="184" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#a9bccd">Sessão protegida, MFA quando exigido e permissões verificadas no servidor.</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.4">
+    <rect x="1240" y="52" width="264" height="34" rx="17" fill="rgba(63,214,224,0.10)" stroke="#3fd6e0" stroke-opacity="0.35"/>
+    <circle cx="1262" cy="69" r="4" fill="#3fd6e0"/>
+    <text x="1278" y="73" fill="#3fd6e0">IMPLEMENTADO · V1.0.0</text>
+  </g>
+  <rect x="96" y="212" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <g>
+    <rect x="96" y="290" width="196" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="96" y="290" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="120" y="330" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Acesso</text>
+    
+    <text x="120" y="356" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Usuário e senha</text>
+  </g>
+  <g>
+    <rect x="338" y="290" width="196" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="338" y="290" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="362" y="330" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Verificação</text>
+    
+    <text x="362" y="356" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Hash Argon2</text>
+    <text x="362" y="380" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Bloqueio progressivo</text>
+  </g>
+  <g>
+    <rect x="580" y="290" width="196" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="580" y="290" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="604" y="330" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">MFA</text>
+    
+    <text x="604" y="356" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">TOTP quando</text>
+    <text x="604" y="380" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">exigido</text>
+  </g>
+  <g>
+    <rect x="822" y="290" width="196" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="822" y="290" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="846" y="330" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Sessão</text>
+    
+    <text x="846" y="356" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Cookie HttpOnly</text>
+    <text x="846" y="380" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Expiração ociosa</text>
+  </g>
+  <g>
+    <rect x="1064" y="290" width="196" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="1064" y="290" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="1088" y="330" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Autorização</text>
+    
+    <text x="1088" y="356" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Perfil e permissão</text>
+    <text x="1088" y="380" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Token CSRF</text>
+  </g>
+  <g>
+    <rect x="1306" y="290" width="196" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="1306" y="290" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="1330" y="330" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Módulos</text>
+    
+    <text x="1330" y="356" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Somente o permitido</text>
+    <text x="1330" y="380" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Leitura por escopo</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M292 375L338 375" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g aria-hidden="true">
+    <path d="M534 375L580 375" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g aria-hidden="true">
+    <path d="M776 375L822 375" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g aria-hidden="true">
+    <path d="M1018 375L1064 375" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g aria-hidden="true">
+    <path d="M1260 375L1306 375" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    
+  </g>
+  <g>
+    <rect x="96" y="540" width="680" height="220" rx="16" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <rect x="96" y="540" width="680" height="3" rx="1.5" fill="#3fd6e0"/>
+    <text x="120" y="578" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#e9f1f8">Perfis de acesso</text>
+    <text x="120" y="608" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Administrador · gestão completa e aprovações.</text>
+    <text x="120" y="630" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Operacional · rotina da operação conforme permissão.</text>
+    <text x="120" y="652" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Colaborador · leitura limitada ao escopo autorizado.</text>
+    <text x="120" y="674" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Toda decisão de acesso ocorre no servidor.</text>
+  </g>
+  <g>
+    <rect x="824" y="540" width="680" height="220" rx="16" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <rect x="824" y="540" width="680" height="3" rx="1.5" fill="#48d3a0"/>
+    <text x="848" y="578" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#e9f1f8">Recuperação e controle</text>
+    <text x="848" y="608" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Códigos de recuperação de uso único.</text>
+    <text x="848" y="630" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Redefinição assistida pelo administrador.</text>
+    <text x="848" y="652" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Sessões visíveis e revogáveis pelo titular.</text>
+    <text x="848" y="674" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Eventos de acesso registrados para auditoria.</text>
+  </g>
+  <rect x="96" y="824" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <text x="96" y="856" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#6b8094">Fonte: módulos de autenticação, sessão e administração de usuários (V1.0.0).</text>
+  <text x="1504" y="856" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#8196aa">MATERIAL DE APRESENTAÇÃO · SEM DADOS OPERACIONAIS</text>
+  <rect x="0" y="897" width="1600" height="3" fill="#3fd6e0" opacity="0.3"/>
+</svg>

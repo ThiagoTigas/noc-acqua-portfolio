@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Capa NOC Acqua — V1.0.0</title>
+  <desc id="descricao">Capa de apresentação do NOC Acqua com a marca Acqua Telecom, o nome do sistema e o princípio de produto: nenhum número sem origem.</desc>
+  <rect width="1600" height="900" fill="#070d15"/>
+  <defs>
+    <linearGradient id="iconFundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123848"/>
+      <stop offset="1" stop-color="#102630"/>
+    </linearGradient>
+    <linearGradient id="fundoCapa" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#070d15"/>
+      <stop offset="0.58" stop-color="#0a131e"/>
+      <stop offset="1" stop-color="#0e1a27"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.8" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#3fd6e0" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#3fd6e0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fadeEsq" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#070d15" stop-opacity="0.94"/>
+      <stop offset="0.55" stop-color="#070d15" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#070d15" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barraTopo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fd6e0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#3fd6e0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="areaGrafico" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3fd6e0" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#3fd6e0" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grade" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="rgba(148, 176, 206, 0.13)" stroke-width="1"/>
+    </pattern>
+    <marker id="pontaFluxo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#3fd6e0"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#fundoCapa)"/>
+  <rect width="1600" height="900" fill="url(#halo)"/>
+  <rect width="1600" height="900" fill="url(#grade)" opacity="0.34"/>
+  <rect width="780" height="900" fill="url(#fadeEsq)"/>
+  <g aria-hidden="true" fill="none" stroke="#3fd6e0">
+    <circle cx="1240" cy="460" r="300" stroke-opacity="0.14"/>
+    <circle cx="1240" cy="460" r="390" stroke-opacity="0.09"/>
+    <circle cx="1240" cy="460" r="480" stroke-opacity="0.05"/>
+  </g>
+  <rect x="0" y="0" width="560" height="3" fill="url(#barraTopo)"/>
+  <rect x="0.5" y="0.5" width="1599" height="899" fill="none" stroke="rgba(148, 176, 206, 0.24)"/>
+  <g>
+    <rect x="96" y="72" width="56" height="56" rx="17" fill="url(#iconFundo)" stroke="rgba(85, 226, 225, 0.22)" stroke-width="1.5"/>
+    <path d="M 111.16666666666667 100 L 118.16666666666667 100 L 121.66666666666667 108.16666666666667 L 127.5 91.83333333333334 L 131 100 L 136.83333333333334 100" fill="none" stroke="#61e5e2" stroke-width="2.566666666666667" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <text x="168" y="100" font-size="26" font-weight="700" letter-spacing="0.4" fill="#f7fbff">ACQUA <tspan fill="#8fb2c3">TELECOM</tspan></text>
+    <text x="168" y="124" font-size="11" font-weight="700" letter-spacing="2.6" fill="#7890a4">OPERAÇÕES DE REDE</text>
+  </g>
+  <g font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <text x="96" y="288" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="600" letter-spacing="3.6" fill="#3fd6e0">NETWORK OPERATIONS CENTER</text>
+    <text x="90" y="408" font-size="112" font-weight="700" letter-spacing="-3" fill="#e9f1f8">NOC ACQUA</text>
+    <rect x="96" y="438" width="152" height="5" rx="2.5" fill="#3fd6e0"/>
+    <text x="96" y="508" font-size="27" fill="#a9bccd">Gestão de ordens de serviço, produtividade,</text>
+    <text x="96" y="546" font-size="27" fill="#a9bccd">auditorias e indicadores em um só ambiente.</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" letter-spacing="1.2" aria-hidden="true">
+    <rect x="96" y="586" width="206" height="40" rx="20" fill="#122131" stroke="rgba(148, 176, 206, 0.24)"/>
+    <text x="118" y="612" fill="#a9bccd">ORDENS DE SERVIÇO</text>
+    <rect x="314" y="586" width="168" height="40" rx="20" fill="#122131" stroke="rgba(148, 176, 206, 0.24)"/>
+    <text x="336" y="612" fill="#a9bccd">PRODUTIVIDADE</text>
+    <rect x="494" y="586" width="142" height="40" rx="20" fill="#122131" stroke="rgba(148, 176, 206, 0.24)"/>
+    <text x="516" y="612" fill="#a9bccd">AUDITORIAS</text>
+  </g>
+  <rect x="96" y="660" width="664" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <g aria-hidden="true">
+    <rect x="96" y="700" width="3" height="52" rx="1.5" fill="#3fd6e0"/>
+    <text x="116" y="716" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="2.2" fill="#6b8094">PRINCÍPIO DE PRODUTO</text>
+    <text x="116" y="748" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="600" fill="#a9bccd">Nenhum número sem origem.</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.4" aria-hidden="true">
+    <text x="96" y="816" fill="#6b8094">V1.0.0 · APRESENTAÇÃO DO PROJETO</text>
+    <text x="760" y="816" text-anchor="end" fill="#6b8094">ACQUA TELECOM</text>
+  </g>
+  <g aria-hidden="true">
+    <rect x="838" y="158" width="674" height="620" rx="24" fill="#02070c" opacity="0.42"/>
+    <rect x="830" y="150" width="674" height="620" rx="24" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="830" y="150" width="674" height="620" rx="24" fill="none" stroke="#3fd6e0" stroke-opacity="0.16"/>
+    <line x1="830" y1="212" x2="1504" y2="212" stroke="rgba(148, 176, 206, 0.13)"/>
+    <circle cx="862" cy="182" r="5" fill="undefined" fill-opacity="0.8"/>
+    <circle cx="884" cy="182" r="5" fill="undefined" fill-opacity="0.8"/>
+    <circle cx="906" cy="182" r="5" fill="#48d3a0" fill-opacity="0.8"/>
+    <text x="934" y="189" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" letter-spacing="2.2" fill="#8196aa">VISÃO OPERACIONAL</text>
+    <text x="1478" y="188" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#6b8094">SOMENTE LEITURA</text>
+
+    <rect x="862" y="250" width="3" height="52" rx="1.5" fill="#3fd6e0"/>
+    <text x="884" y="274" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="600" fill="#e9f1f8">Ordens de serviço</text>
+    <text x="884" y="301" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.1" fill="#8196aa">ABERTAS · AGENDADAS · EM EXECUÇÃO</text>
+    <circle cx="1378" cy="266" r="4" fill="#48d3a0"/>
+    <text x="1478" y="271" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#48d3a0">IMPLEMENTADO</text>
+
+    <line x1="862" y1="316" x2="1478" y2="316" stroke="rgba(148, 176, 206, 0.13)"/>
+    <rect x="862" y="328" width="3" height="52" rx="1.5" fill="#3fd6e0"/>
+    <text x="884" y="352" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="600" fill="#e9f1f8">Produtividade</text>
+    <text x="884" y="379" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.1" fill="#8196aa">POR TÉCNICO E EQUIPE</text>
+    <circle cx="1378" cy="344" r="4" fill="#48d3a0"/>
+    <text x="1478" y="349" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#48d3a0">IMPLEMENTADO</text>
+
+    <line x1="862" y1="394" x2="1478" y2="394" stroke="rgba(148, 176, 206, 0.13)"/>
+    <rect x="862" y="406" width="3" height="52" rx="1.5" fill="#3fd6e0"/>
+    <text x="884" y="430" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="600" fill="#e9f1f8">Auditorias técnicas</text>
+    <text x="884" y="457" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.1" fill="#8196aa">CHECKLISTS · PENDÊNCIAS · PRAZOS</text>
+    <circle cx="1378" cy="422" r="4" fill="#48d3a0"/>
+    <text x="1478" y="427" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#48d3a0">IMPLEMENTADO</text>
+
+    <rect x="862" y="486" width="610" height="210" rx="16" fill="#122131" stroke="rgba(148, 176, 206, 0.24)"/>
+    <text x="886" y="518" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2" fill="#8196aa">EVOLUÇÃO OPERACIONAL</text>
+    <text x="1448" y="518" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#6b8094">DADOS DEMONSTRATIVOS</text>
+    <g stroke="rgba(148, 176, 206, 0.13)" stroke-width="1">
+      <line x1="886" y1="556" x2="1448" y2="556"/>
+      <line x1="886" y1="596" x2="1448" y2="596"/>
+      <line x1="886" y1="636" x2="1448" y2="636"/>
+      <line x1="886" y1="668" x2="1448" y2="668"/>
+    </g>
+    <path d="M886 668 L886 620 L934 600 L982 610 L1030 574 L1078 590 L1126 556 L1174 570 L1222 534 L1270 548 L1318 512 L1366 526 L1414 500 L1448 508 L1448 668 Z" fill="url(#areaGrafico)"/>
+    <path d="M886 620 L934 600 L982 610 L1030 574 L1078 590 L1126 556 L1174 570 L1222 534 L1270 548 L1318 512 L1366 526 L1414 500 L1448 508" fill="none" stroke="#3fd6e0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1126" cy="556" r="5" fill="#0e1a27" stroke="#3fd6e0" stroke-width="2.5"/>
+    <circle cx="1318" cy="512" r="5" fill="#0e1a27" stroke="#4cc2ff" stroke-width="2.5"/>
+
+    <text x="862" y="742" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.4" fill="#8196aa">IXC</text>
+    <line x1="900" y1="737" x2="954" y2="737" stroke="#3fd6e0" stroke-opacity="0.6" marker-end="url(#pontaFluxo)"/>
+    <text x="970" y="742" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.4" fill="#8196aa">COLETA</text>
+    <line x1="1048" y1="737" x2="1102" y2="737" stroke="#3fd6e0" stroke-opacity="0.6" marker-end="url(#pontaFluxo)"/>
+    <text x="1118" y="742" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.4" fill="#8196aa">NOC</text>
+    <line x1="1160" y1="737" x2="1214" y2="737" stroke="#3fd6e0" stroke-opacity="0.6" marker-end="url(#pontaFluxo)"/>
+    <text x="1230" y="742" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.4" fill="#8196aa">INDICADORES</text>
+    <text x="1478" y="742" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#6b8094">PROCEDÊNCIA</text>
+  </g>
+  <rect x="0" y="897" width="1600" height="3" fill="#3fd6e0" opacity="0.35"/>
+</svg>

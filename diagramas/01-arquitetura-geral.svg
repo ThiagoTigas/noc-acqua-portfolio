@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Arquitetura geral do NOC Acqua</title>
+  <desc id="descricao">Diagrama simplificado: navegador acessa o frontend, que usa a API de aplicação; a API lê e grava no PostgreSQL isolado e consulta o IXC somente para leitura.</desc>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#070d15"/>
+      <stop offset="0.6" stop-color="#0a131e"/>
+      <stop offset="1" stop-color="#0e1a27"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.82" cy="0.12" r="0.7">
+      <stop offset="0" stop-color="#3fd6e0" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#3fd6e0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grade" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="rgba(148, 176, 206, 0.13)" stroke-width="1"/>
+    </pattern>
+    <marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#3fd6e0"/>
+    </marker>
+    <marker id="pontaFraca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#6b8094"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#fundo)"/>
+  <rect width="1600" height="900" fill="url(#halo)"/>
+  <rect width="1600" height="900" fill="url(#grade)" opacity="0.5"/>
+  <text x="96" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="3.2" fill="#3fd6e0">ARQUITETURA · VISÃO GERAL</text>
+  <text x="96" y="142" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.2" fill="#e9f1f8">Arquitetura geral</text>
+  <text x="96" y="184" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#a9bccd">Interface, API, banco isolado e integração somente leitura com o IXC.</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.4">
+    <rect x="1240" y="52" width="264" height="34" rx="17" fill="rgba(63,214,224,0.10)" stroke="#3fd6e0" stroke-opacity="0.35"/>
+    <circle cx="1262" cy="69" r="4" fill="#3fd6e0"/>
+    <text x="1278" y="73" fill="#3fd6e0">IMPLEMENTADO · V1.0.0</text>
+  </g>
+  <rect x="96" y="212" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <g>
+    <rect x="96" y="300" width="300" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="96" y="300" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="120" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Navegador</text>
+    
+    <text x="120" y="366" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Interface web responsiva</text>
+    <text x="120" y="390" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Acesso autenticado</text>
+  </g>
+  <g>
+    <rect x="476" y="300" width="320" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="476" y="300" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="500" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">Frontend</text>
+    
+    <text x="500" y="366" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">React + TypeScript</text>
+    <text x="500" y="390" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Painéis e módulos operacionais</text>
+  </g>
+  <g>
+    <rect x="876" y="300" width="320" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="876" y="300" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="900" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">API de aplicação</text>
+    
+    <text x="900" y="366" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Regras, agregações</text>
+    <text x="900" y="390" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">e exportação</text>
+  </g>
+  <g>
+    <rect x="1256" y="300" width="248" height="170" rx="18" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <rect x="1256" y="300" width="4" height="170" rx="2" fill="#3fd6e0" fill-opacity="0.7"/>
+    <text x="1280" y="340" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">PostgreSQL</text>
+    
+    <text x="1280" y="366" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Persistência</text>
+    <text x="1280" y="390" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">em cluster isolado</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M396 385L476 385" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    <text x="436" y="375" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.8" fill="#6b8094">HTTPS</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M796 385L876 385" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    <text x="836" y="375" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.8" fill="#6b8094">API</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M1196 385L1256 385" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    <text x="1226" y="375" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.8" fill="#6b8094">SQL</text>
+  </g>
+  <g>
+    <rect x="876" y="560" width="320" height="150" rx="18" fill="#0e1a27" stroke="#6b8094" stroke-dasharray="7 6"/>
+    <rect x="876" y="560" width="4" height="150" rx="2" fill="#3fd6e0" fill-opacity="0.4"/>
+    <text x="900" y="600" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#e9f1f8">IXC — origem das O.S.</text>
+    
+    <text x="900" y="626" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Leitura paginada</text>
+    <text x="900" y="650" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">Nenhuma escrita</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M1036 560L1036 470" fill="none" stroke="#3fd6e0" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#ponta)"/>
+    <text x="1048" y="515" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.8" fill="#6b8094">somente leitura</text>
+  </g>
+  <g>
+    <rect x="96" y="560" width="720" height="150" rx="16" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <rect x="96" y="560" width="720" height="3" rx="1.5" fill="#3fd6e0"/>
+    <text x="120" y="598" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#e9f1f8">Princípios de operação</text>
+    <text x="120" y="628" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Nenhum número sem origem: cada indicador informa base, janela e critério.</text>
+    <text x="120" y="650" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Integração somente leitura com o IXC, sem alteração no sistema de origem.</text>
+    <text x="120" y="672" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Backups verificados e releases com rollback ensaiado.</text>
+  </g>
+  <rect x="96" y="824" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <text x="96" y="856" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#6b8094">Fonte: documentação técnica e código da V1.0.0.</text>
+  <text x="1504" y="856" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#8196aa">MATERIAL DE APRESENTAÇÃO · SEM DADOS OPERACIONAIS</text>
+  <rect x="0" y="897" width="1600" height="3" fill="#3fd6e0" opacity="0.3"/>
+</svg>

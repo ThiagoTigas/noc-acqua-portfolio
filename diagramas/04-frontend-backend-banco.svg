@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Frontend, backend e banco de dados</title>
+  <desc id="descricao">Diagrama simplificado das três camadas: módulos do frontend, grupos de API e domínios persistidos no PostgreSQL isolado.</desc>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#070d15"/>
+      <stop offset="0.6" stop-color="#0a131e"/>
+      <stop offset="1" stop-color="#0e1a27"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.82" cy="0.12" r="0.7">
+      <stop offset="0" stop-color="#3fd6e0" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#3fd6e0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grade" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="rgba(148, 176, 206, 0.13)" stroke-width="1"/>
+    </pattern>
+    <marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#3fd6e0"/>
+    </marker>
+    <marker id="pontaFraca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9Z" fill="#6b8094"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#fundo)"/>
+  <rect width="1600" height="900" fill="url(#halo)"/>
+  <rect width="1600" height="900" fill="url(#grade)" opacity="0.5"/>
+  <text x="96" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="3.2" fill="#3fd6e0">CAMADAS · APLICAÇÃO</text>
+  <text x="96" y="142" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.2" fill="#e9f1f8">Frontend, API e banco</text>
+  <text x="96" y="184" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#a9bccd">Contratos tipados nas duas pontas e permissões verificadas no servidor.</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.4">
+    <rect x="1240" y="52" width="264" height="34" rx="17" fill="rgba(63,214,224,0.10)" stroke="#3fd6e0" stroke-opacity="0.35"/>
+    <circle cx="1262" cy="69" r="4" fill="#3fd6e0"/>
+    <text x="1278" y="73" fill="#3fd6e0">IMPLEMENTADO · V1.0.0</text>
+  </g>
+  <rect x="96" y="212" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <g>
+    <rect x="96" y="270" width="400" height="520" rx="20" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <text x="120" y="310" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.6" fill="#3fd6e0">REACT + TYPESCRIPT</text>
+    <text x="120" y="346" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="24" font-weight="600" fill="#e9f1f8">Frontend</text>
+    <text x="120" y="376" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Interface única e responsiva</text>
+      <g>
+    <rect x="120" y="404" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="204" y="429.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Painel executivo</text>
+  </g>
+      <g>
+    <rect x="304" y="404" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="388" y="429.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Ordens de serviço</text>
+  </g>
+      <g>
+    <rect x="120" y="460" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="204" y="485.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Produtividade</text>
+  </g>
+      <g>
+    <rect x="304" y="460" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="388" y="485.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Equipe</text>
+  </g>
+      <g>
+    <rect x="120" y="516" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="204" y="541.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Auditorias</text>
+  </g>
+      <g>
+    <rect x="304" y="516" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="388" y="541.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Relatórios</text>
+  </g>
+      <g>
+    <rect x="120" y="572" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="204" y="597.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Assistente do NOC</text>
+  </g>
+      <g>
+    <rect x="304" y="572" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="388" y="597.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Perfil</text>
+  </g>
+      <g>
+    <rect x="120" y="628" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="204" y="653.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Homologação IXC</text>
+  </g>
+      <g>
+    <rect x="304" y="628" width="168" height="42" rx="10" fill="#122131" stroke="rgba(148, 176, 206, 0.13)"/>
+    <text x="388" y="653.5" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#a9bccd">Configurações</text>
+  </g>
+  </g>
+  <g>
+    <rect x="600" y="270" width="400" height="520" rx="20" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <text x="624" y="310" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.6" fill="#3fd6e0">EXPRESS + TYPESCRIPT</text>
+    <text x="624" y="346" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="24" font-weight="600" fill="#e9f1f8">API de aplicação</text>
+    <text x="624" y="376" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Regras, sessão e agregações</text>
+    <text x="624" y="416" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Autenticação e sessão</text>
+    <text x="624" y="456" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Operação e ordens</text>
+    <text x="624" y="496" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Produtividade</text>
+    <text x="624" y="536" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Auditorias e relatórios</text>
+    <text x="624" y="576" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Administração de usuários</text>
+    <text x="624" y="616" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Sincronização com o IXC</text>
+  </g>
+  <g>
+    <rect x="1104" y="270" width="400" height="520" rx="20" fill="#0e1a27" stroke="rgba(148, 176, 206, 0.24)"/>
+    <text x="1128" y="310" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.6" fill="#3fd6e0">POSTGRESQL ISOLADO</text>
+    <text x="1128" y="346" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="24" font-weight="600" fill="#e9f1f8">Banco de dados</text>
+    <text x="1128" y="376" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#a9bccd">Persistência operacional</text>
+    <text x="1128" y="416" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Usuários e sessões</text>
+    <text x="1128" y="456" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Importações e presença de O.S.</text>
+    <text x="1128" y="496" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Histórico e auditoria</text>
+    <text x="1128" y="536" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Referências homologadas</text>
+    <text x="1128" y="576" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Checklists de suporte</text>
+    <text x="1128" y="616" font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#a9bccd">• Catálogos e configuração</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M496 530L600 530" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    <text x="548" y="520" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.8" fill="#6b8094">HTTPS · CSRF</text>
+  </g>
+  <g aria-hidden="true">
+    <path d="M1000 530L1104 530" fill="none" stroke="#3fd6e0" stroke-width="1.6" marker-end="url(#ponta)"/>
+    <text x="1052" y="520" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.8" fill="#6b8094">SQL</text>
+  </g>
+  <rect x="96" y="824" width="1408" height="1" fill="rgba(148, 176, 206, 0.13)"/>
+  <text x="96" y="856" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#6b8094">Fonte: contratos do frontend, rotas da API e dicionário do banco (V1.0.0).</text>
+  <text x="1504" y="856" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8" fill="#8196aa">MATERIAL DE APRESENTAÇÃO · SEM DADOS OPERACIONAIS</text>
+  <rect x="0" y="897" width="1600" height="3" fill="#3fd6e0" opacity="0.3"/>
+</svg>
